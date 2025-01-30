@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APUS Toolkit</title>
+  <style>
+    :root {
+      /* Color Variables */
+      --deElf-color: #FF5722; /* Orange */
+      --kaltura-color: #45a049; /* Green */
+      --htmlToWord-color: #FFC107; /* Yellow */
+      --srtToTxt-color: #2196F3; /* Blue */
+      --youtube-color: #f44336; /* Red */
+      --hotspot-color: #e12aa7; /* Red */
+      --card-background: #ffffff;
+      --button-background: #ffffff;
+      --button-hover: #DDD;
+      --text-color: #555;
+      --button-text-color: #555;
+      --shadow-color: rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7f6;
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
+
+    h1 {
+      color: var(--text-color);
+      text-align: center;
+      display: block;
+      font-size: 3em;
+    }
+
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      box-sizing: border-box;
+      width: 100%;
+      box-sizing: border-box;
+      max-width: 1500px;
+      margin: auto;
+    }
+
+    .card {
+      flex: 1;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px var(--shadow-color);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      color: white;
+      position: relative;
+      margin: 20px;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card .title {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      z-index: 1;
+      flex: 1;
+    }
+
+    .card button {
+      background-color: var(--button-background);
+      color: var(--button-text-color);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      z-index: 1;
+    }
+
+    .card button:hover {
+      background-color: var(--button-hover);
+    }
+
+    /* Color backgrounds for each card using CSS variables */
+    .deElf {
+      background-color: var(--deElf-color);
+    }
+    .kaltura {
+      background-color: var(--kaltura-color);
+    }
+    .htmlToWord {
+      background-color: var(--htmlToWord-color);
+    }
+    .srtToTxt {
+      background-color: var(--srtToTxt-color);
+    }
+    .youtube {
+      background-color: var(--youtube-color);
+    }
+    .hotspot {
+      background-color: var(--hotspot-color);
+    }
+
+    /* Responsive adjustments */
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .cards-container {
+        flex-direction: column; /* Stack cards vertically */
+        max-height: none; /* Remove height limitation */
+        padding-top: 10px;
+      }
+
+      .card {
+        height: auto;
+        margin-bottom: 20px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      h1 {
+        font-size: 1.5em;
+      }
+
+      .card {
+        width: 90%; /* Reduce card size on very small screens */
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>APUS Toolkit</h1>
+
+  <div class="cards-container">
+    <!-- deElf Tool Card -->
+    <div class="card deElf">
+      <div class="title">deElf Tool</div>
+      <button onclick="window.open('https://apus-deelf-test.glitch.me/', '_blank')">Go to Tool</button>
+    </div>
+
+    <!-- Kaltura Upload Tool Card -->
+    <div class="card kaltura">
+      <div class="title">Kaltura Upload Tool</div>
+      <button onclick="window.open('https://kaltura-upload.glitch.me/', '_blank')">Go to Tool</button>
+    </div>
+
+    <!-- HTML to Word Doc Tool Card -->
+    <div class="card htmlToWord">
+      <div class="title">HTML to Word Doc Tool</div>
+      <button onclick="window.open('https://b2d-apus.glitch.me/', '_blank')">Go to Tool</button>
+    </div>
+
+    <!-- SRT to TXT Tool Card -->
+    <div class="card srtToTxt">
+      <div class="title">SRT to TXT Tool</div>
+      <button onclick="window.open('https://srtconverter.glitch.me/', '_blank')">Go to Tool</button>
+    </div>
+  </div>
+  <div class="cards-container">
+    <!-- YouTube Download Tool Card -->
+    <div class="card youtube">
+      <div class="title">YouTube Download Tool</div>
+      <button onclick="window.open('https://download-youtube-vids.glitch.me/', '_blank')">Go to Tool</button>
+    </div>
+
+     <!-- Hotspot Maker Tool Card -->
+     <div class="card hotspot">
+      <div class="title">Hotspot Maker</div>
+      <button onclick="window.open('https://hotspot-maker.glitch.me/', '_blank')">Go to Tool</button>
+    </div>
+  </div>
+
+</body>
+</html>
