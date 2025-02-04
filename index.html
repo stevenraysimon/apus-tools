@@ -10,9 +10,10 @@
       --deElf-color: #FF5722; /* Orange */
       --kaltura-color: #45a049; /* Green */
       --htmlToWord-color: #FFC107; /* Yellow */
-      --srtToTxt-color: #2196F3; /* Blue */
+      --srtToTxt-color: #2196F3; /* Light Blue */
       --youtube-color: #f44336; /* Red */
-      --hotspot-color: #e12aa7; /* Red */
+      --hotspot-color: #e12aa7; /* Pink */
+      --hotspot-color: #2635bc; /* Royal Blue */
       --card-background: #ffffff;
       --button-background: #ffffff;
       --button-hover: #DDD;
@@ -111,6 +112,9 @@
     .hotspot {
       background-color: var(--hotspot-color);
     }
+    .matching {
+      background-color: var(--matching-color);
+    }
 
     /* Responsive adjustments */
     @media screen and (max-width: 768px) {
@@ -182,6 +186,12 @@
      <div class="card hotspot">
       <div class="title">Hotspot Maker</div>
       <button onclick="window.open('https://hotspot-maker.glitch.me/', '_blank')">Go to Tool</button>
+    </div>
+
+    <!-- Matching Tool Card -->
+    <div class="card matching">
+      <div class="title">Matching Tool</div>
+      <button onclick="window.open('https://matching-tool.glitch.me/', '_blank')">Go to Tool</button>
     </div>
   </div>
 
