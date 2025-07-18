@@ -26,6 +26,8 @@
       /* Purple */
       --banner-color: #0cafa7;
       /* Purple */
+      --drag-n-drop-color: #e68026;
+      /* Purple */
       --card-background: #ffffff;
       --button-background: #ffffff;
       --button-hover: #DDD;
@@ -152,6 +154,10 @@
       background-color: var(--banner-color);
     }
 
+    .drag-n-drop{
+      background-color: var(--drag-n-drop-color);
+    }
+
     /* Responsive adjustments */
     @media screen and (max-width: 768px) {
       h1 {
@@ -242,10 +248,16 @@
     </div>
   </div>
   <div class="cards-container">
-    <!-- YouTube Download Tool Card -->
+    <!-- Banner Tool Card -->
     <div class="card banner">
       <div class="title">Custom Batch Banner Tool</div>
       <button onclick="window.open('https://batch-banner-tool.glitch.me/', '_blank')">Go to Tool</button>
+    </div>
+
+    <!-- Drag N Drop Quiz Tool -->
+    <div class="card drag-n-drop">
+      <div class="title">Drag N Drop Quiz Maker</div>
+      <button onclick="window.open('https://apus-ssimon.github.io/drag-n-drop-quiz/', '_blank')">Go to Tool</button>
     </div>
   </div>
 
